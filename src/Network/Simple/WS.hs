@@ -73,7 +73,7 @@ connectSOCKS5
   => T.HostName -- ^ SOCKS5 proxy server hostname or IP address.
   -> T.ServiceName -- ^ SOCKS5 proxy server service port name or number.
   -> T.HostName
-  -- ^ Destination WebSocket server hostname or IP address. We connect to this
+  -- ^ Destination WebSockets server hostname or IP address. We connect to this
   -- host /through/ the SOCKS5 proxy specified in the previous arguments.
   --
   -- Note that if hostname resolution on this 'T.HostName' is necessary, it
@@ -95,7 +95,6 @@ connectSOCKS5
  -> m r
 connectSOCKS5 phn psn dhn dsn res hds act = do
   T.connectSOCKS5 phn psn dhn dsn $ \(sock, pa, da) -> do
-    liftIO (print (pa, da))
     Ex.bracket (streamFromSocket sock) (liftIO . W.close) $ \stream -> do
       conn <- clientConnectionFromStream stream dhn dsn res hds
       liftIO (W.forkPingThread conn 30)

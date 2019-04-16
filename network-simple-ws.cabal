@@ -1,5 +1,5 @@
 name: network-simple-ws
-version: 0.1
+version: 0.1.1
 synopsis: Simple interface to WebSockets.
 description: Simple interface to WebSockets.
 homepage: https://github.com/k0001/network-simple-ws
