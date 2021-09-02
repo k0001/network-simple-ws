@@ -2,8 +2,8 @@
 
 let
 pkgs = import nixpkgs {};
-ghc843 = pkgs.haskell.packages.ghc843.override {
+ghc8104 = pkgs.haskell.packages.ghc8104.override {
   packageSetConfig = import ./hs-overlay.nix { inherit pkgs; };
 };
 
-in { inherit (ghc843) network-simple-ws; }
+in { inherit (ghc8104) network-simple-ws _shell; }

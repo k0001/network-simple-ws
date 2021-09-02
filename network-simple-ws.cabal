@@ -1,5 +1,5 @@
 name: network-simple-ws
-version: 0.1.1
+version: 0.2
 synopsis: Simple interface to WebSockets.
 description: Simple interface to WebSockets.
 homepage: https://github.com/k0001/network-simple-ws
@@ -23,6 +23,7 @@ library
   ghc-options: -Wall -O2
   exposed-modules: Network.Simple.WS
   build-depends:
+    async,
     base >=4.7 && <5.0,
     bytestring,
     case-insensitive,
