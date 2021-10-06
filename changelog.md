@@ -6,7 +6,7 @@
 * /COMPILER ASSISTED BREAKING CHANGE:/ `recv`'s close semantics have 
   improved. See its documentation for details.
 
-* Added `Close`, `sendClose`.
+* Added `close`.
 
 * Depend on `websockets >=0.12.6`.
 
