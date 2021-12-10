@@ -1,5 +1,5 @@
-{ mkDerivation, async, base, bytestring, case-insensitive
-, network-simple, safe-exceptions, stdenv, websockets
+{ mkDerivation, async, base, bytestring, case-insensitive, lib
+, network-simple, safe-exceptions, websockets
 }:
 mkDerivation {
   pname = "network-simple-ws";
@@ -11,5 +11,5 @@ mkDerivation {
   ];
   homepage = "https://github.com/k0001/network-simple-ws";
   description = "Simple interface to WebSockets";
-  license = stdenv.lib.licenses.bsd3;
+  license = lib.licenses.bsd3;
 }
