@@ -1,11 +1,3 @@
-# network-simple-ws
+# REPOSITORY MOVED
 
-Build running `nix-build`.
-
-WebSockets (WS) in Haskell.
-
-Check the source or rendered Haddocks for extensive documentation.
-
-This code is licensed under the terms of the so called **3-clause BSD
-license**. Read the file named ``LICENSE`` found in this same directory
-for details.
+Go to [https://github.com/k0001/network-simple](https://github.com/k0001/network-simple)
